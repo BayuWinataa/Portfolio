@@ -37,8 +37,8 @@ const Testimonials = () => {
 		'Intro to Software Engineering (Revou) | Maret 2024',
 	];
 	return (
-		<div className="h-full bg-primary/30  text-center">
-			<div className="h-full flex flex-col justify-center">
+		<div className="h-full bg-primary/30  text-center ">
+			<div className="h-1/2 flex flex-col  ">
 				<motion.h2 variants={fadeIn('up', 0.2)} initial="hidden" animate="show" exit="hidden" className="h2 mb-8 xl:mb-0">
 					<span className="text-accent text-4xl">Sertifikat</span>
 				</motion.h2>
