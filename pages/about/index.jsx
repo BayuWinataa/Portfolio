@@ -68,7 +68,7 @@ const About = () => {
 	const [index, setIndex] = useState(0);
 
 	return (
-		<div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+		<div className="h-full bg-primary/30 py-20 xl:py-32 text-center xl:text-left ">
 			<Circles />
 
 			{/* avatar img */}
@@ -76,10 +76,10 @@ const About = () => {
 				<Avatar />
 			</motion.div>
 
-			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+			<div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 ">
 				{/* text */}
-				<div className="flex-1 flex flex-col justify-center">
-					<motion.h2 variants={fadeIn('right', 0.2)} initial="hidden" animate="show" exit="hidden" className="text-5xl font-bold ">
+				<div className="flex-1 flex flex-row xl:flex-col justify-center">
+					<motion.h2 variants={fadeIn('right', 0.2)} initial="hidden" animate="show" exit="hidden" className="text-2xl xl:text-5xl font-bold ">
 						Membangun <span className="text-accent">tampilan web</span> yang fungsional & menarik.
 					</motion.h2>
 
@@ -89,10 +89,10 @@ const About = () => {
 
 					{/* Penghitung */}
 					<motion.div variants={fadeIn('right', 0.6)} initial="hidden" animate="show" className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
-						<div className="flex flex-1 xl:gap-x-6">
+						<div className="flex flex-1 gap-x-6">
 							{/* Pengalaman */}
-							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 flex">
+							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
+								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2  ">
 									<CountUp start={0} end={1} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Tahun Pengalaman</div>
@@ -100,7 +100,7 @@ const About = () => {
 
 							{/* Klien */}
 							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 flex">
+								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 flex ">
 									<CountUp start={0} end={10} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Klien</div>
@@ -108,7 +108,7 @@ const About = () => {
 
 							{/* Proyek */}
 							<div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 flex">
+								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
 									<CountUp start={0} end={20} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Proyek Selesai</div>
@@ -116,7 +116,7 @@ const About = () => {
 
 							{/* Sertifikat */}
 							<div className="relative flex-1">
-								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 flex">
+								<div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2 ">
 									<CountUp start={0} end={45} duration={5} /> +
 								</div>
 								<div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Sertifikat</div>
